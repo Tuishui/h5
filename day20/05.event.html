@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">按钮1</button>
+
+     <form id="form" method="get" action="">
+     	 <input type="text" name="name">
+     	 <input type="submit" value="点击提交">
+     	 <input type="reset" value="点击重置">
+     </form>
+
+
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
+
+    window.onload = function() {
+        //等整个页面的所有资源都加载完毕之后才能执行
+        var btn1 = document.getElementById("btn1");
+        //console.log(btn1);
+        // console.log($("#btn1")[0]); //将jQuery对象转换为原生DOM对象
+
+        //DOM0
+        btn1.onclick = function(event) {
+            console.log("click 111");
+        };
+
+
+        btn1.onclick = null;
+
+
+        var form = document.getElementById("form");
+
+        //添加在form元素上
+        form.onsubmit = function(){
+        	console.log("触发submit。。。。");
+        };
+
+        form.onreset = function(){
+        	console.log("触发 reset 。。。");
+        };
+    };
+
+    </script>
+</body>
+
+</html>
+//当表达式遇见多中情况,或者多种结果,需要对这样的情况进行选择和处理,这个时候如果用switch时比较号处理
+<br>//if  和 switch 相比较,switch代码更加简洁,清晰

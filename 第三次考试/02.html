@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		function trim(str){
+			var reg = /^\s*(.+?)\s*$/g;
+			return  str.replace(reg, function(all, p1){
+				return p1;
+			});
+		}
+
+		console.log("[" + trim(" hkjgkjgk ajgkj akjk  ") + "]");
+	</script>
+</body>
+</html>

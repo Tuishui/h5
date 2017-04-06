@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<script>
+    /*
+    name=lisi&age=10&hobby=one&hobby=two ===>
+    name=lisi&age=10&hobby=one,two
+    */
+    function convert(str){
+    	var keys = {};
+
+    	str.replace(/([^&=]+)=([^&]*)/g, function(all, key, value){
+
+           keys[key] = (keys[key] ? keys[key] + "," : "")  + value; 
+       });
+
+
+        //kesys = {"name": "lisi", "age": "10", "hobby":"swim,basketball,football"};
+
+    	var result = [];
+
+        for (var i in keys){
+        	result.push(i + "=" + keys[i]);
+        }
+
+
+        //result = ['name=lisi', 'age=10', "hobby=swim,basketball,football"];
+
+         return result.join("&");
+    }
+
+    convert("name=lisi&age=10&hobby=one&hobby=two");
+
+</script>
+	
+</body>
+</html>

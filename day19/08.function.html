@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    function test(arg1, arg2) {
+        console.log("arg1 = ", arg1);
+        console.log("arg2 = ", arg2);
+        console.log("arguments.legnth = " + arguments.length);
+    }
+
+    function test2() {
+        console.log("arguments.legnth = " + arguments.length);
+        for (var i = 0; i < arguments.length; i++) {
+            console.log(arguments[i]);
+        }
+    }
+
+    // test(10,20,30,40);
+
+    test2(1, 2, 3, 4, 5);
+
+    //arguments只能在函数中使用， console.log(arguments);
+
+
+
+
+    var value = 10;
+    function fun() {
+    	/*
+        console.log(value);
+        var value = 20;
+        */
+       //等价代码：
+       var value;
+       console.log(value);
+       value = 20;
+
+    }
+    fun(); //结果为undefined
+
+
+    // function 函数的作用域里的变量会外层作用域的变量.
+    // function 作用域内,变量的声明被提升了,但是注意:变量赋值并没有被提升,只是声明被提升
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	function count(array){
+		return array.reduce(function(pre, next, index, all){
+			pre[next] = pre[next] + 1 || 1;
+			return pre; 
+		}, {});
+	}
+
+	var names = ["li", "zhang", "zhao", "liu", "li", "zhang", "zhou"];
+
+	console.log(count(names));
+
+
+</script>
+	
+</body>
+</html>
