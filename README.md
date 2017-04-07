@@ -1,5 +1,5 @@
 # 以上是 html5前端基础解析知识
-## 一下是 README.md 的简单应用
+## 以下是 README.md 的简单应用
 初步适用Readme.md 
 * 首先 Readme 的使用是先 建立文档 但是 必须是大写的 README.md 
 * 其次 Readme 的一些简单的语法 要学的会 （详细情况请看源码，对比效果）
@@ -40,3 +40,8 @@
 [github](http://github.com) 链接
 **************************  
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png) 图片
+
+```js
+vara = document.getElementById("a");
+console.log(10);
+```
