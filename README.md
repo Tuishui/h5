@@ -26,8 +26,8 @@
 1. 优点1 插入写的话 不用改 
 1. 优点2 写的比较方便 (希望可以养成习惯)
   1. 缩行
-  * 缩行方式 2
-   * 缩行方式3
+    * 缩行方式 2
+     * 缩行方式3
 ********************************  
 1. Make my changes
   1. Fix bug
@@ -37,7 +37,7 @@
 3. Open a pull request
   * Describe my changes
   * Mention all the members of my team
-    * Ask for feedback
+   * Ask for feedback
 ********************************
 * [x]对勾 呈现
 * []空白呈现
