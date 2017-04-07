@@ -42,6 +42,6 @@
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png) 图片
 
 ```js
-vara = document.getElementById("a");
+var a = document.getElementById("a");
 console.log(10);
 ```
